@@ -11,6 +11,9 @@ python = "^3.10"
 rich = "^12.6.0"
 maxconsole = "^0.1.0"
 
+[tool.poetry.scripts]
+maxprogress = "maxprogress:main"
+get_progress = "maxprogress:get_progress"
 
 [build-system]
 requires = ["poetry-core"]
