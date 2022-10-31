@@ -11,7 +11,7 @@ test = ["flake8 (==3.7.8)", "hypothesis (==3.55.3)"]
 
 [[package]]
 name = "maxconsole"
-version = "0.1.0"
+version = "0.3.0"
 description = "Themed Rich Conosle"
 category = "main"
 optional = false

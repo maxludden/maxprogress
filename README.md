@@ -1,3 +1,7 @@
+# MaxProgress 0.3.0
+
+Updated to match dependencies with fellow helper scripts: maxconsole and maxcolor.
+
 # MaxProgress 0.2.0
 
 Maxprogress provides a thin wrapper around rich’s Progress Bar class. It generates a custom formatted progress bar.

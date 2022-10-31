@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "maxprogress"
-version = "0.2.0"
+version = "0.3.0"
 description = "A customized Rich Progress Bar"
 authors = ["maxludden <dev@maxludden.com>"]
 license = "MIT"
@@ -9,7 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 rich = "^12.6.0"
-maxconsole = "^0.2.0"
+maxconsole = "^0.3.0"
 
 [tool.poetry.scripts]
 maxprogress = "maxprogress:main"
