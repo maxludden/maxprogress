@@ -1,6 +1,6 @@
-# MaxProgress 0.1.0
+# MaxProgress 0.2.0
 
-Maxprogress provides a thin wrapper around rich’s Progress Bar class. It generates a custom formated progress bar.
+Maxprogress provides a thin wrapper around rich’s Progress Bar class. It generates a custom formatted progress bar.
 
 <br />
 

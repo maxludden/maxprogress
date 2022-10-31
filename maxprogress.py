@@ -8,6 +8,8 @@ from rich.style import Style, StyleType
 from rich.text import Text
 import time
 
+__version__ = "0.2.0"
+
 theme = get_theme()
 console = get_console(theme)
 
