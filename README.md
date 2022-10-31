@@ -2,9 +2,9 @@
 
 Maxprogress provides a thin wrapper around rich’s Progress Bar class. It generates a custom formated progress bar.
 
-<div style="max-width:80%;margin:auto;padding:20px;">
-  <iframe src="maxprogress.gif" width="997" height="164" frameBorder="0" allowFullScreen>maxprogress</iframe>
-</div>div
+<br />
+
+![maxprogress](maxprogress.gif)
 
 ## Installation
 
