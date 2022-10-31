@@ -11,7 +11,10 @@ import time
 theme = get_theme()
 console = get_console(theme)
 
-def get_progress(thin: bool = True, console: Console = console) -> Progress:
+def get_progress(console: Console = console) -> Progress:
+    if not console:
+        theme = get_theme()
+        console = get_console(theme)
     text_column = TextColumn("[progress.description]{task.description}")
     spinner_column = SpinnerColumn(
         spinner_name="point",
@@ -56,15 +59,5 @@ if __name__ == "__main__":
             progress.update(task3, advance=0.9)
             time.sleep(0.02)
 
-    thick_progress = get_progress(thin=False)
-    with thick_progress:
-
-        task1thick = progress.add_task("[red]Downloading...", total=200)
-        task2thick = progress.add_task("[green]Processing...", total=200)
-        task3thick = progress.add_task("[cyan]Cooking...", total=200)
-
-        while not progress.finished:
-            progress.update(task1thick, advance=0.5)
-            progress.update(task2thick, advance=0.3)
-            progress.update(task3thick, advance=0.9)
-            time.sleep(0.02)
+    console.print()
+    console.print("[#00ff00]Done.[/]")
