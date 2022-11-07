@@ -8,12 +8,22 @@ from rich.style import Style, StyleType
 from rich.text import Text
 import time
 
-__version__ = "0.2.0"
+__version__ = "0.4.0"
 
-theme = get_theme()
-console = get_console(theme)
+
+console = get_console(get_theme())
+
 
 def get_progress(console: Console = console) -> Progress:
+    """
+    Generate a rich.Progress Class to create formatted progress bars.
+
+    Args:
+        `console` (rich.Console): The console to use for progress bars.
+
+    Returns:
+        `progress` (rich.Progress): A formatted progress object to create progress bars.
+    """
     if not console:
         theme = get_theme()
         console = get_console(theme)
@@ -46,6 +56,7 @@ def get_progress(console: Console = console) -> Progress:
     return progress
 
 if __name__ == "__main__":
+    '''Runs if run as main. Demonstrates the formatted rich.Progress Bars'''
     time.sleep(10)
     progress = get_progress()
     console.print()
