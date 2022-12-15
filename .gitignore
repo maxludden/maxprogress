@@ -167,3 +167,4 @@ cspell.json
 .vscode/extensions.json
 launch.json
 cspell.json
+.DS_Store
