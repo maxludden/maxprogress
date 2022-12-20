@@ -1,8 +1,12 @@
-# MaxProgress 0.3.0
+# MaxProgress 0.4.2
+
+Updated dependencies to match fellow helper scripts: maxconsole and maxcolor.
+
+### MaxProgress 0.3.0
 
 Updated to match dependencies with fellow helper scripts: maxconsole and maxcolor.
 
-# MaxProgress 0.2.0
+### MaxProgress 0.2.0
 
 Maxprogress provides a thin wrapper around rich’s Progress Bar class. It generates a custom formatted progress bar.
 
@@ -12,22 +16,18 @@ Maxprogress provides a thin wrapper around rich’s Progress Bar class. It gener
 
 ## Installation
 
-### Pip
+MaxProgress is available on PyPI and able to be installed with pip, pdm, or your favorite package manager.
+
+#### Pip
 
 ```bash
 pip install maxprogress
 ```
 
-### Pipx
+#### PDM
 
 ```bash
-pipx install maxprogress
-```
-
-### Poetry
-
-```bash
-poetry add maxprogress
+pdm add maxprogress
 ```
 
 ## Usage

@@ -8,7 +8,7 @@ from rich.style import Style, StyleType
 from rich.text import Text
 import time
 
-__version__ = "0.4.1"
+__version__ = "0.4.2"
 
 
 console = MaxConsole()
