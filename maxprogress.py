@@ -1,4 +1,4 @@
-from maxconsole import get_console, get_theme
+from maxconsole import MaxConsole
 from rich.console import Console
 from rich.progress import (BarColumn, MofNCompleteColumn, Progress,
                            SpinnerColumn, TextColumn, TimeElapsedColumn,
@@ -8,10 +8,10 @@ from rich.style import Style, StyleType
 from rich.text import Text
 import time
 
-__version__ = "0.4.0"
+__version__ = "0.4.1"
 
 
-console = get_console(get_theme())
+console = MaxConsole()
 
 
 def get_progress(console: Console = console) -> Progress:
@@ -24,9 +24,7 @@ def get_progress(console: Console = console) -> Progress:
     Returns:
         `progress` (rich.Progress): A formatted progress object to create progress bars.
     """
-    if not console:
-        theme = get_theme()
-        console = get_console(theme)
+    console = MaxConsole()
     text_column = TextColumn("[progress.description]{task.description}")
     spinner_column = SpinnerColumn(
         spinner_name="point",

@@ -1,20 +1,15 @@
-[tool.poetry]
+[project]
 name = "maxprogress"
-version = "0.4.0"
-description = "A customized Rich Progress Bar"
-authors = ["maxludden <dev@maxludden.com>"]
-license = "MIT"
+version = "0.4.1"
+description = "A customized Rich Progress Bar."
+authors = [{ name = "maxludden", email = "dev@maxludden.com" }]
+dependencies = ["maxconsole>=0.5.1", "rich>=12.6.0"]
+requires-python = ">=3.10"
 readme = "README.md"
+license = { text = "MIT" }
 
-[tool.poetry.dependencies]
-python = "^3.10"
-rich = "^12.6.0"
-maxconsole = "^0.4.0"
-
-[tool.poetry.scripts]
-maxprogress = "maxprogress:main"
-get_progress = "maxprogress:get_progress"
+[tool.pdm]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["pdm-pep517>=0.12.0"]
+build-backend = "pdm.pep517.api"
